@@ -19,7 +19,7 @@ config.enable_tab_bar = false
 config.font_size = 18.0
 config.audible_bell = "Disabled"
 
-config.default_prog = { '/bin/zsh', '-c', 'tmux', 'new-session', '-s', '"$(/home/jose/.config/tmux/scripts/tmux-session-number)"'}
+config.default_prog = { '/bin/zsh', '-c', '/opt/homebrew/bin/tmux', 'new-session', '-s', '"$(/Users/typesarespaces/.config/tmux/scripts/tmux-session-number)"'}
 
 -- The art is a bit too bright and colorful to be useful as a backdrop
 -- for text, so we're going to dim it down to 10% of its normal brightness
@@ -35,7 +35,7 @@ config.background = {
   -- This is the deepest/back-most layer. It will be rendered first
   {
     source = {
-      File = '/home/jose/.config/wezterm/Pictures/Backgrounds/spaceship_bg_1.png',
+      File = '/Users/typesarespaces/.config/wezterm/Pictures/Backgrounds/spaceship_bg_1.png',
     },
     -- The texture tiles vertically but not horizontally.
     -- When we repeat it, mirror it so that it appears "more seamless".
@@ -51,7 +51,7 @@ config.background = {
   -- Subsequent layers are rendered over the top of each other
   {
     source = {
-      File = '/home/jose/.config/wezterm/Pictures/Overlays/overlay_1_spines.png',
+      File = '/Users/typesarespaces/.config/wezterm/Pictures/Overlays/overlay_1_spines.png',
     },
     width = '100%',
     repeat_x = 'NoRepeat',
@@ -68,7 +68,7 @@ config.background = {
   },
   {
     source = {
-      File = '/home/jose/.config/wezterm/Pictures/Overlays/overlay_2_alienball.png',
+      File = '/Users/typesarespaces/.config/wezterm/Pictures/Overlays/overlay_2_alienball.png',
     },
     width = '100%',
     repeat_x = 'NoRepeat',
@@ -81,7 +81,7 @@ config.background = {
   },
   {
     source = {
-      File = '/home/jose/.config/wezterm/Pictures/Overlays/overlay_3_lobster.png',
+      File = '/Users/typesarespaces/.config/wezterm/Pictures/Overlays/overlay_3_lobster.png',
     },
     width = '100%',
     repeat_x = 'NoRepeat',
@@ -93,7 +93,7 @@ config.background = {
   },
   {
     source = {
-      File = '/home/jose/.config/wezterm/Pictures/Overlays/overlay_4_spiderlegs.png',
+      File = '/Users/typesarespaces/.config/wezterm/Pictures/Overlays/overlay_4_spiderlegs.png',
     },
     width = '100%',
     repeat_x = 'NoRepeat',
