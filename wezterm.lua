@@ -14,7 +14,7 @@ end
 
 -- For example, changing the color scheme:
 config.color_scheme = 'Gruvbox Material (Gogh)'
-config.window_background_opacity = 0.9
+config.window_background_opacity = 1.0
 config.enable_tab_bar = false
 config.font_size = 18.0
 config.audible_bell = "Disabled"
@@ -25,7 +25,7 @@ config.default_prog = { '/bin/zsh', '-c', '/opt/homebrew/bin/tmux', 'new-session
 -- for text, so we're going to dim it down to 10% of its normal brightness
 local dimmer = { brightness = 0.1 }
 
-config.enable_scroll_bar = true
+config.enable_scroll_bar = false
 config.min_scroll_bar_height = '2cell'
 config.colors = {
   scrollbar_thumb = 'white',
