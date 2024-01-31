@@ -13,7 +13,8 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = 'Gruvbox Material (Gogh)'
+--config.color_scheme = 'Gruvbox Material (Gogh)'
+config.color_scheme = 'DoomOne'
 config.window_background_opacity = 1.0
 config.enable_tab_bar = false
 config.font_size = 18.0
