@@ -19,8 +19,9 @@ config.window_background_opacity = 1.0
 config.enable_tab_bar = false
 config.font_size = 18.0
 config.audible_bell = "Disabled"
+config.window_decorations= "RESIZE"
 
-config.default_prog = { '/bin/zsh', '-c', '/opt/homebrew/bin/tmux', 'new-session', '-s', '"$(/Users/typesarespaces/.config/tmux/scripts/tmux-session-number)"'}
+config.default_prog = { '/bin/zsh', '-l', '-c', '/opt/homebrew/bin/tmux new-session -s \"$(/Users/typesarespaces/.config/tmux/scripts/tmux-session-number)\"' }
 
 -- The art is a bit too bright and colorful to be useful as a backdrop
 -- for text, so we're going to dim it down to 10% of its normal brightness
