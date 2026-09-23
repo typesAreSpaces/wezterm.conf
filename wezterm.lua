@@ -17,13 +17,13 @@ config.color_scheme = 'DoomOne'
 config.color_scheme = 'Gruvbox Material (Gogh)'
 config.color_scheme = 'GruvboxDarkHard'
 config.color_scheme = 'GruvboxDark'
-config.window_background_opacity = 1
+config.window_background_opacity = 0.95
 config.enable_tab_bar = false
 config.font_size = 18.0
 config.audible_bell = "Disabled"
 config.window_decorations= "RESIZE"
 
-config.default_prog = { '/bin/zsh', '-l', '-c', '/opt/homebrew/bin/tmux new-session -s \"$(basename "$(tty)")\"' }
+config.default_prog = { '/bin/zsh', '-l', '-c', '/opt/homebrew/bin/tmux new-session' }
 
 -- The art is a bit too bright and colorful to be useful as a backdrop
 -- for text, so we're going to dim it down to 10% of its normal brightness
