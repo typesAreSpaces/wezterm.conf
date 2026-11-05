@@ -13,9 +13,6 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = 'DoomOne'
-config.color_scheme = 'Gruvbox Material (Gogh)'
-config.color_scheme = 'GruvboxDarkHard'
 config.color_scheme = 'GruvboxDark'
 config.window_background_opacity = 1
 config.enable_tab_bar = false
@@ -23,17 +20,20 @@ config.font_size = 18.0
 config.audible_bell = "Disabled"
 config.window_decorations= "RESIZE"
 
-config.default_prog = { '/bin/zsh', '-l', '-c', '/opt/homebrew/bin/tmux new-session' }
+config.default_prog = { '/bin/zsh', '-l', '-c', 'exec /opt/homebrew/bin/tmux new-session' }
+
+-- Performance: render via Metal and avoid idle redraws
+config.front_end = 'WebGpu'
+config.animation_fps = 1
+config.cursor_blink_rate = 0
+-- tmux keeps its own scrollback
+config.scrollback_lines = 0
 
 -- The art is a bit too bright and colorful to be useful as a backdrop
 -- for text, so we're going to dim it down to 10% of its normal brightness
 local dimmer = { brightness = 0.2 }
 
 config.enable_scroll_bar = false
-config.min_scroll_bar_height = '2cell'
-config.colors = {
-  scrollbar_thumb = 'white',
-}
 
 local act = wezterm.action
 
